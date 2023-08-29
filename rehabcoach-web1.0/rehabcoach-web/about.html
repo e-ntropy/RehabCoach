@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" sizes="32x32" href="imgs/logo2.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Rehab Coach</title>
+  </head>
+  <body>
+    <header>
+      <div class="navbar">
+        <div class="logo"><a href="index.html">Rehab Coach</a></div>
+        <ul class="links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li>
+            <a href="https://github.com/sunwenhaopro/RehabCoach/">Github</a>
+          </li>
+        </ul>
+        <a href="#" class="action_btn">Get Started</a>
+        <div class="toggle_btn">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </div>
+      <div class="dropdown_menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li>
+          <a href="https://github.com/sunwenhaopro/RehabCoach/">Github</a>
+        </li>
+        <li><a href="#" class="action_btn">Get Started</a></li>
+      </div>
+    </header>
+    <main>
+      <section id="about">
+        <h1 class="about_text">
+          This app adopts deep learning models from the mmpose framework to
+          enable efficient and accurate real-time 2D human pose estimation. By
+          simply using the phone camera, it can intelligently analyze key body
+          joints and evaluate body posture.
+        </h1>
+        <h1 class="about_text">
+          The models and algorithms are optimized for medical rehabilitation
+          scenarios, significantly reducing model computation for low-latency
+          real-time pose detection and analysis. It also features custom pose
+          matching algorithms designed for common rehabilitation motions,
+          comparing users' live poses against standard poses to provide
+          corresponding training feedback and improvement suggestions for
+          intelligent personalized guidance.
+        </h1>
+        <h1 class="about_text">
+          Compared to traditional rule-based methods, this app utilizes deep
+          learning techniques for more precise and smarter rehabilitation
+          assistance. It reduces reliance on professional therapists - users can
+          get training guidance anytime through the mobile app without location
+          constraints, making it more convenient and efficient. It currently
+          supports various common rehabilitation motions, and more will be
+          continuously added to enrich training options for better user
+          experience.
+        </h1>
+        <h1 class="about_text">
+          In summary, this app fully exploits computer vision and AI to
+          creatively apply human pose estimation to medical rehabilitation,
+          aiming to provide an economical and effective solution for
+          personalized smart rehabilitation.
+        </h1>
+      </section>
+      <!-- 此处添加正文 -->
+    </main>
+    <script>
+      const toggleBtn = document.querySelector(".toggle_btn");
+      const toggleBtnIcon = document.querySelector(".toggle_btn i");
+      const dropDownMenu = document.querySelector(".dropdown_menu");
+
+      toggleBtn.onclick = function () {
+        dropDownMenu.classList.toggle("open");
+        const isOpen = dropDownMenu.classList.contains("open");
+
+        toggleBtnIcon.classList = isOpen
+          ? "fa-solid fa-xmark"
+          : "fa-solid fa-bars";
+      };
+    </script>
+  </body>
+  <footer>❤️Copyright & Stuff 2023. By Yunshi Gu.</footer>
+</html>
